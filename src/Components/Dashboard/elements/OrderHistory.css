@@ -1,0 +1,99 @@
+.orderHistory{
+    width: 100%;
+    height: 250px;
+    background-color: #182037;
+    -webkit-box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.43);
+    box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.43);
+    border-radius: 20px;
+}
+
+.history-inner{
+    padding: 20px;
+}
+
+.table-content{
+    display: block;
+    overflow-x: auto;
+}
+
+.orders{
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+thead{
+    color: #556897;
+    border-top: 1px solid #555c72;
+    border-bottom: 1px solid #555c72;
+    margin-bottom: 7px;
+    font-weight: 900;
+}
+
+tbody {
+    color: #556897;
+    display:block;
+    height:124px;
+    overflow:auto;
+    font-weight: 700;
+}
+
+tr{
+    margin-bottom: 7px;
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+thead {
+    width: calc( 100% - 1em )
+}
+table {
+    width:400px;
+}
+
+.badge{
+    width: 61px;
+    font-size: 70%;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-block;
+    padding: .35rem 1rem;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.badge-success {
+    color: #2fd81f;
+    background-color: rgb(20, 92, 43);
+}
+
+.badge-failed {
+    color: #ff0015;
+    background-color: rgb(99, 24, 24);
+}
+
+@media (max-width: 768px){
+
+    .orderHistory{
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1200px){
+
+    tbody{
+        height: 100px;
+    }
+}
+
+@media (max-width: 1366px){
+
+    .orderHistory{
+        margin-bottom: 40px;
+    }
+}

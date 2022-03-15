@@ -1,0 +1,185 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #182037;
+    border-radius: 20px;
+    margin-left: 40px;
+    height: 551px;
+}
+
+.wrapperForm {
+    position: relative;
+    width: 400px;
+}
+
+.table {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #182037;
+    -webkit-box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.43);
+    box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.43);
+    border-radius: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: transform 0.3s;
+}
+
+.dsh-card-title{
+    color: #aab9e8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.gen-option{
+    font-weight: 900;
+    color: #fff;
+    border: 0;
+    background-color: #2b3963;
+    display: inline-block;
+    padding: 13px 23px;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+}
+.gen-option:focus{
+    border-color: #40a9ff;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.tableBehind {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    background-color: #182037;
+    border-radius: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.table>* {
+    margin-bottom: 10px;
+}
+
+.tableBehind>* {
+    margin-bottom: 20px!important;
+}
+
+.purchaseButton {
+    width: 40px;
+    height: 100%;
+    color: #aab9e8;
+    background-color: #182037;
+    border-radius: 15px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.purchaseButton>p {
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    user-select: none;
+}
+
+fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+.radioButton input:checked ~ .clickable{
+    background: rgb(20,171,250);
+    background: linear-gradient(90deg, rgba(20,171,250,1) 0%, rgba(20,129,250,1) 100%);
+}
+
+.radioButton {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 48%;
+}
+
+.clickable{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    height: 38px;
+    width: 100%;
+    padding-top: 13px;
+    margin-bottom: 1px;
+    background-color: #2b3963;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: center !important;
+    align-items: center;
+    color: #fff;
+    font-weight: 900;
+    transition: linear 0.2s;
+    user-select: none;
+    border: rgb(20,171,250);
+    border: linear-gradient(90deg, rgba(20,171,250,1) 0%, rgba(20,129,250,1) 100%);
+}
+
+input[type=radio] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+textarea{
+    resize: none;
+    height: 100%!important;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.proxy-gen-btn{
+    width: 100%;
+    border-radius: 20px;
+    padding: 9px 24px;
+    border: none;
+    user-select: none;
+    color: white;
+    font-weight: 900;
+    background: rgb(20,171,250);
+    background: linear-gradient(90deg, rgba(20,171,250,1) 0%, rgba(20,129,250,1) 100%);
+}
+
+.resiPage p{
+    margin-top: 15px;
+    font-size: 42px;
+}
+
+
+@media (max-width: 768px){
+    .wrapper{
+        margin-top: 40px;
+        margin-left: 0;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .wrapperForm{
+        width: 95%;
+    }
+}
